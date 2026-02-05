@@ -1,0 +1,266 @@
+.root {
+    -fx-font-family: "Avenir Next", "SF Pro Display", "Futura", sans-serif;
+    -fx-background-color:
+        linear-gradient(to bottom right, #f3f6f9, #e4ebf1),
+        linear-gradient(to top right, rgba(15, 22, 30, 0.08), rgba(15, 22, 30, 0.0));
+}
+
+.header {
+    -fx-padding: 28 36 12 36;
+}
+
+.header-row {
+    -fx-alignment: center-left;
+}
+
+.language-box {
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-border-color: rgba(22, 30, 40, 0.2);
+    -fx-padding: 2 8 2 8;
+}
+
+.title-accent {
+    -fx-min-height: 4;
+    -fx-max-height: 4;
+    -fx-background-color: linear-gradient(to right, #0f2a3f, #1c4764);
+    -fx-background-radius: 999;
+}
+
+.title {
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #0f1217;
+}
+
+.subtitle {
+    -fx-font-size: 13.5px;
+    -fx-text-fill: #4a515c;
+}
+
+.content {
+    -fx-padding: 12 36 28 36;
+}
+
+.input-pane {
+    -fx-pref-width: 340;
+    -fx-max-width: 360;
+}
+
+.gender-row {
+    -fx-alignment: center-left;
+}
+
+.section-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4a515c;
+}
+
+.time-separator {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #14161b;
+    -fx-padding: 6 0 0 0;
+}
+
+.radar-pane {
+    -fx-padding: 0;
+}
+
+.input-card {
+    -fx-padding: 18 16 18 16;
+}
+
+.card {
+    -fx-background-color:
+        linear-gradient(to bottom right, rgba(255, 255, 255, 0.92), rgba(245, 249, 252, 0.86));
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: rgba(18, 24, 34, 0.12);
+    -fx-border-width: 1;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(10, 16, 24, 0.2), 24, 0.2, 0, 12);
+}
+
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(22, 30, 40, 0.18);
+    -fx-padding: 8 12 8 12;
+}
+
+.input-field {
+    -fx-pref-width: 190;
+    -fx-max-width: 220;
+}
+
+.primary-button {
+    -fx-background-color: #0f2a3f;
+    -fx-text-fill: #f7f8fb;
+    -fx-background-radius: 999;
+    -fx-padding: 11 26 11 26;
+    -fx-font-weight: 700;
+}
+
+.primary-button:hover {
+    -fx-background-color: #0b2235;
+}
+
+.status-label {
+    -fx-text-fill: #b54a3a;
+    -fx-font-size: 12px;
+    -fx-padding: 2 0 0 0;
+}
+
+.results-pane {
+    -fx-padding: 8 0 0 0;
+}
+
+.results-header {
+    -fx-alignment: center-left;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #14161b;
+}
+
+.secondary-button {
+    -fx-background-color: rgba(15, 42, 63, 0.12);
+    -fx-text-fill: #0f2a3f;
+    -fx-background-radius: 999;
+    -fx-padding: 8 16 8 16;
+    -fx-font-weight: 700;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(15, 42, 63, 0.2);
+}
+
+.results-surface {
+    -fx-background-color:
+        rgba(255, 255, 255, 0.8);
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: rgba(20, 28, 40, 0.1);
+    -fx-border-width: 1;
+    -fx-padding: 12;
+}
+
+.results-list {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.results-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 6 0 6 0;
+}
+
+.result-row {
+    -fx-background-radius: 16;
+    -fx-padding: 16;
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(12, 18, 26, 0.16), 16, 0.22, 0, 6);
+}
+
+.result-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #161b22;
+}
+
+.result-message {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4a515c;
+}
+
+.result-detail {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6a7380;
+}
+
+.result-badge {
+    -fx-alignment: center;
+}
+
+.result-color {
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 999;
+    -fx-font-weight: 700;
+    -fx-text-fill: #161b22;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+
+.level-red .result-row {
+    -fx-background-color: rgba(255, 190, 180, 0.9);
+}
+
+.level-yellow .result-row {
+    -fx-background-color: rgba(255, 232, 180, 0.92);
+}
+
+.level-green .result-row {
+    -fx-background-color: rgba(195, 236, 216, 0.94);
+}
+
+.level-blue .result-row {
+    -fx-background-color: rgba(190, 224, 242, 0.92);
+}
+
+.level-table {
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.level-table .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.level-table .column-header {
+    -fx-background-color: rgba(15, 42, 63, 0.1);
+    -fx-background-radius: 8;
+    -fx-padding: 6 8 6 8;
+}
+
+.level-table .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent rgba(0, 0, 0, 0.06) transparent;
+}
+
+.level-table .table-row-cell.level-red {
+    -fx-background-color: rgba(255, 204, 196, 0.55);
+}
+
+.level-table .table-row-cell.level-yellow {
+    -fx-background-color: rgba(255, 238, 194, 0.6);
+}
+
+.level-table .table-row-cell.level-green {
+    -fx-background-color: rgba(201, 238, 220, 0.65);
+}
+
+.level-table .table-row-cell.level-blue {
+    -fx-background-color: rgba(198, 228, 242, 0.65);
+}
+
+.level-table .table-cell.level-red {
+    -fx-background-color: rgba(255, 204, 196, 0.55);
+}
+
+.level-table .table-cell.level-yellow {
+    -fx-background-color: rgba(255, 238, 194, 0.6);
+}
+
+.level-table .table-cell.level-green {
+    -fx-background-color: rgba(201, 238, 220, 0.65);
+}
+
+.level-table .table-cell.level-blue {
+    -fx-background-color: rgba(198, 228, 242, 0.65);
+}
