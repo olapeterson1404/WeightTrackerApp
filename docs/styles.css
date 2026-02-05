@@ -281,12 +281,12 @@ h1 {
 .table th.lvl-2,
 .table td.lvl-2,
 .table th.lvl-3,
-.table td.lvl-3,
-.table th.lvl-4,
-.table td.lvl-4 {
+.table td.lvl-3 {
   background: var(--red);
 }
 
+.table th.lvl-4,
+.table td.lvl-4,
 .table th.lvl-5,
 .table td.lvl-5,
 .table th.lvl-6,

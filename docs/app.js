@@ -316,7 +316,7 @@ function formatTime(seconds) {
 }
 
 function levelDescriptor(level) {
-  if (level <= 4) {
+  if (level <= 3) {
     return { color: t("color.red"), cls: "level-red", msg: t(`levelMsg.${level}`) };
   }
   if (level <= 6) {
