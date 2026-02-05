@@ -276,6 +276,38 @@ h1 {
   border-radius: 8px;
 }
 
+.table th.lvl-1,
+.table td.lvl-1,
+.table th.lvl-2,
+.table td.lvl-2,
+.table th.lvl-3,
+.table td.lvl-3,
+.table th.lvl-4,
+.table td.lvl-4 {
+  background: var(--red);
+}
+
+.table th.lvl-5,
+.table td.lvl-5,
+.table th.lvl-6,
+.table td.lvl-6 {
+  background: var(--yellow);
+}
+
+.table th.lvl-7,
+.table td.lvl-7,
+.table th.lvl-8,
+.table td.lvl-8 {
+  background: var(--green);
+}
+
+.table th.lvl-9,
+.table td.lvl-9,
+.table th.lvl-10,
+.table td.lvl-10 {
+  background: var(--blue);
+}
+
 .radar-wrap {
   width: 100%;
   display: flex;

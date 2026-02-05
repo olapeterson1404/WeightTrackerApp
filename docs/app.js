@@ -39,9 +39,9 @@ const i18n = {
     btnClear: "Rensa fält",
     btnUndo: "Ångra rensa",
     tabResults: "Resultat",
-    tabTable: "Nivåtabell",
+    tabTable: "SHF Kravprofil",
     tabRadar: "Spindelnät",
-    tabAll: "Alla nivåer",
+    tabAll: "Mina vikt-nivåer",
     statusFillField: "Fyll i {0}.",
     statusInvalidNumber: "Ogiltigt tal i {0}.",
     statusBodyweightRequired: "Ange kroppsvikt för 1RM-övningar.",
@@ -123,9 +123,9 @@ const i18n = {
     btnClear: "Clear fields",
     btnUndo: "Undo clear",
     tabResults: "Results",
-    tabTable: "Level table",
+    tabTable: "SHF Requirement Profile",
     tabRadar: "Radar",
-    tabAll: "All levels",
+    tabAll: "My weight levels",
     statusFillField: "Fill in {0}.",
     statusInvalidNumber: "Invalid number in {0}.",
     statusBodyweightRequired: "Enter body weight for 1RM exercises.",
@@ -498,13 +498,13 @@ function renderAllLevels(exercises, bodyWeight) {
 
 function buildTable(headers, rows) {
   const thead = `<thead><tr>${headers
-    .map((h) => `<th>${h}</th>`)
+    .map((h, i) => (i === 0 ? `<th>${h}</th>` : `<th class="lvl-${i}">${h}</th>`))
     .join("")}</tr></thead>`;
   const tbody = `<tbody>${rows
     .map(
       (row) => `<tr>${[
         `<td>${row.label}</td>`,
-        ...row.values.map((v) => `<td>${v}</td>`),
+        ...row.values.map((v, i) => `<td class="lvl-${i + 1}">${v}</td>`),
       ].join("")}</tr>`
     )
     .join("")}</tbody>`;
